@@ -1,10 +1,25 @@
 package collection_map_tasks;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 public class List_RemoveNameAhmed {
+    public static void main(String[] args) {
+        String[] list={"Ahmed", "John", "Eric", "Ahmed"};
+            int count2= Collections.frequency(Arrays.asList(list),"Ahmed");
+            System.out.println(count2);
+        int j=0;
+        String [] list2=new String[list.length-count2];
+        for (int i = 0; i < list.length; i++) {
+            if(!list[i].equals("Ahmed")){
+                list2[j]=list[i];
+                j++;
+            }
+        }
+        System.out.println(Arrays.toString(list2));
+    }
 
     /*
     Given a list of people' names: "Ahmed", "John", Eric", "Ahmed".....

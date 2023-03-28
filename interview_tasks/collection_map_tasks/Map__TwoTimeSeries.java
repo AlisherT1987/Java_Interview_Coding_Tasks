@@ -20,7 +20,7 @@ public class Map__TwoTimeSeries {
      */
 
     public static Map<Integer, Double> mergeMap(Map<Integer, Double> map1, Map<Integer, Double> map2) {
-        Map<Integer, Double> result = new HashMap<>(map1);
+        Map<Integer, Double> result = new HashMap<>();
         result.putAll(map1);
         Set<Integer> keys = new HashSet<>();
         keys.addAll(map1.keySet());
